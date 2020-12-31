@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodpin-logo" translatesAutoresizingMaskIntoConstraints="NO" id="eG9-qI-2t3">
-                                <rect key="frame" x="87" y="244" width="240" height="172"/>
+                                <rect key="frame" x="60" y="245" width="295" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -31,6 +31,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="foodpin-logo" width="142" height="53"/>
+        <image name="foodpin-logo" width="800" height="533"/>
     </resources>
 </document>
