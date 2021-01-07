@@ -52,6 +52,7 @@ class ReviewViewController: UIViewController {
     //        }
     //    }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         //with delay
         for index in 0...4 {

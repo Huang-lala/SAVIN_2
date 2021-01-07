@@ -24,11 +24,11 @@
 	<array/>
 	<key>NSCameraUsageDescription</key>
 	<string>You need to grant the app access to your camera in order to take photos.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app needs to access the GPS</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>You need to grant the app access to your photo library so you can pick your favorite
 restaurant photo.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -69,7 +69,7 @@ restaurant photo.</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>UIUserInterfaceStyle</key>
-        <string>Light</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

@@ -12,7 +12,9 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet var mapView: MKMapView!
-    
+    @IBAction func showDirection(sender: UIButton) {
+    }
+    var currentPlacemark: CLPlacemark?
     var restaurant: RestaurantMO!
     
     let locationManager = CLLocationManager()
@@ -25,13 +27,16 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.showsUserLocation = true
+        let locationManager = CLLocationManager()
         
         // Request for a user's authorization for location services
         locationManager.requestWhenInUseAuthorization()
         let status = CLLocationManager.authorizationStatus()
         if status == CLAuthorizationStatus.authorizedWhenInUse {
-            mapView.showsUserLocation = true
+        mapView.showsUserLocation = true
         }
+        
         //locationManager.delegate = self
         
         // Configure map view
@@ -167,21 +172,5 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         currentLocation = userLocation
     }
     
-    // MARK: - Location Manager Delegate methods
-    
-//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-//        print("Error happen: \(error.localizedDescription)")
-//    }
-//
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        if let location = locations.first {
-//            //translate the cooridinate to the address
-//            CLGeocoder().reverseGeocodeLocation(location) { places, _ in
-//                if let firstPlace = places?.first {
-//                    self.currentPlacemark = firstPlace
-//                }
-//            }
-//        }
-//    }
     
 }
